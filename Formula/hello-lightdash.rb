@@ -23,6 +23,6 @@ class HelloLightdash < Formula
   end
 
   test do
-    system "#{bin}/hello-lightdash"
+    system bin/"hello-lightdash"
   end
 end
