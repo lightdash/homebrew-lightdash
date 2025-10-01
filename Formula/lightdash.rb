@@ -16,9 +16,9 @@ class Lightdash < Formula
 
   def install
     if Hardware::CPU.arm?
-      bin.install "lightdash-cli-arm64" => "lightdash"
+      bin.install "lightdash-macos-arm64" => "lightdash"
     else
-      bin.install "lightdash-cli-x64" => "lightdash"
+      bin.install "lightdash-macos-x64" => "lightdash"
     end
   end
 
