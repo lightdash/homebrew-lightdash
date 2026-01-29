@@ -1,17 +1,17 @@
 class Lightdash < Formula
   desc "CLI for the Lightdash BI platform"
   homepage "https://github.com/lightdash/lightdash"
-  version "0.2392.0"
+  version "0.2393.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/lightdash/lightdash/releases/download/0.2392.0/lightdash-cli-0.2392.0-macos-arm64.tar.gz"
-      sha256 "8ae3bcf12004aa626966284d7bb0d0184fd32c3a31da4a56813bd23ee2ac6f10"
+      url "https://github.com/lightdash/lightdash/releases/download/0.2393.0/lightdash-cli-0.2393.0-macos-arm64.tar.gz"
+      sha256 "0a327e5f9827713ffa189b4f2667e84ce58637ffd5568196a61cdc41f16018a2"
     end
     on_intel do
-      url "https://github.com/lightdash/lightdash/releases/download/0.2392.0/lightdash-cli-0.2392.0-macos-x64.tar.gz"
-      sha256 "f313364b9ee9f817d2c8d41d20ab91af1891baaeff3c75e131964def2bad6d7f"
+      url "https://github.com/lightdash/lightdash/releases/download/0.2393.0/lightdash-cli-0.2393.0-macos-x64.tar.gz"
+      sha256 "331484122918a8e0d0d6591afbb045dbdc70c9c521e86a1977787d5fa55e22cf"
     end
   end
 
