@@ -15,15 +15,20 @@ class Lightdash < Formula
     end
   end
 
-  def install
-    if Hardware::CPU.arm?
-      bin.install "lightdash-macos-arm64" => "lightdash"
-    else
-      bin.install "lightdash-macos-x64" => "lightdash"
+  on_linux do
+    on_intel do
+      url "https://github.com/lightdash/lightdash/releases/download/2.223.0/lightdash-cli-2.223.0-linux-x64.tar.gz"
+      sha256 "a3581a82b02919725687376016164019d1cb54cb66d5bf31252d9c42cc2ed2a9"
     end
   end
 
+  def install
+    binary = Dir["lightdash-*"].first
+    odie "No lightdash binary found in archive" if binary.nil?
+    bin.install binary => "lightdash"
+  end
+
   test do
-    system bin/"lightdash", "--version"
+    assert_match version.to_s, shell_output("#{bin}/lightdash --version")
   end
 end
