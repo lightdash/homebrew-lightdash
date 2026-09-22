@@ -16,10 +16,10 @@ class Lightdash < Formula
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/lightdash/lightdash/releases/download/2.286.8/lightdash-cli-2.286.8-linux-x64.tar.gz"
-      sha256 "be3e4a01b042fe06ff322b635f9a4c8068be12334b5e4ef928d22da73da01991"
-    end
+    url "https://github.com/lightdash/lightdash/releases/download/2.286.8/lightdash-cli-2.286.8-linux-x64.tar.gz"
+    sha256 "be3e4a01b042fe06ff322b635f9a4c8068be12334b5e4ef928d22da73da01991"
+
+    depends_on arch: :x86_64
   end
 
   def install
